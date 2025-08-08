@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Prediction</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #e8f0fe;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0, 128, 128, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2e7d32;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #1b1b1b;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #2e7d32;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1b5e20;
+        }
+
+        .result {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #dcedc8;
+            border-left: 6px solid #33691e;
+            color: #2e7d32;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .hospital-icon {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn-icons-png.flaticon.com/512/2966/2966487.png" class="hospital-icon" alt="Hospital Icon">
+        <h2>Breast Cancer Classifier - SVM</h2>
+        <form method="post" action="/predict">
+            {% for feature in features[:7] %}
+                <label>{{ feature }}</label>
+                <input type="text" name="{{ feature }}" required>
+            {% endfor %}
+            <input type="submit" value="Predict">
+        </form>
+
+        {% if result %}
+            <div class="result">
+                Prediction Result: {{ result }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
