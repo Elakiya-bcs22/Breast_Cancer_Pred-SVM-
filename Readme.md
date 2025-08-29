@@ -1,60 +1,79 @@
-🩺 Breast Cancer Prediction — SVM Classifier
+# 🩺 Breast Cancer Prediction — SVM Classifier
 
-A Python-based machine learning project that uses a Support Vector Machine (SVM) to predict whether a tumor is benign 🟢 or malignant 🔴.
-This project demonstrates data preprocessing, model training, evaluation, and predictions using real-world medical datasets.
+A Python-based machine learning project that uses a **Support Vector Machine (SVM)** to predict whether a tumor is **benign 🟢** or **malignant 🔴**.
+This project demonstrates **data preprocessing, model training, evaluation, and predictions** using real-world medical datasets.
 
-📂 Project Structure
-Breast_Cancer_Pred-SVM
+---
 
-├── app.py  # Run predictions using the trained model 🚀
-├── train.py # Train the SVM classifier 🧠
-├── data/ # Dataset files 📊
-├── model/ # Saved model (.pkl) 💾
-├── requirements.txt # Dependencies ⚙️
-└── README.md # Documentation 📖
+## 📂 Project Structure
 
-⚙️ Installation
+```
+Breast_Cancer_Pred-SVM/
+├── app.py               # Run predictions using the trained model 🚀
+├── train.py             # Train the SVM classifier 🧠
+├── data/                # Dataset files 📊
+├── model/               # Saved model (.pkl) 💾
+├── requirements.txt     # Dependencies ⚙️
+└── README.md            # Documentation 📖
+```
 
-Clone the repository:
+---
 
+## ⚙️ Installation
+
+### Clone the repository:
+
+```bash
 git clone https://github.com/Elakiya-bcs22/Breast_Cancer_Pred-SVM-.git
 cd Breast_Cancer_Pred-SVM-
+```
 
+### Install dependencies:
 
-Install dependencies:
-
+```bash
 pip install -r requirements.txt
+```
 
-🚀 Usage
+---
 
-Train the SVM model:
+## 🚀 Usage
 
+### Train the SVM model:
+
+```bash
 python train.py
+```
 
+### Run predictions with new input samples:
 
-Run predictions with new input samples:
-
+```bash
 python app.py
+```
 
-✨ Features
+---
 
-🧠 Implements a Support Vector Machine for tumor classification.
+## ✨ Features
 
-🔄 Workflow: Data Preprocessing → Model Training → Inference.
+* 🧠 Implements a Support Vector Machine for tumor classification.
+* 🔄 Workflow: Data Preprocessing → Model Training → Inference.
+* 📘 Beginner-friendly & modular structure.
+* 🔧 Easy to extend with hyperparameter tuning or kernel variations.
 
-📘 Beginner-friendly & modular structure.
+---
 
-🔧 Easy to extend with hyperparameter tuning or kernel variations.
+## 📈 Future Improvements
 
-📈 Future Improvements
+* 🔍 Try different kernels (`rbf`, `poly`, `sigmoid`).
+* 📊 Use feature scaling and dimensionality reduction (PCA).
+* 🧪 Compare performance with other classifiers (Logistic Regression, Random Forest, etc.).
 
-🔍 Try different kernels (rbf, poly, sigmoid).
+---
 
-📊 Use feature scaling and dimensionality reduction (PCA).
+## ✅ Conclusion
 
-🧪 Compare performance with other classifiers (Logistic Regression, Random Forest, etc.).
-
-✅ Conclusion
-
-The SVM model achieves strong performance in classifying tumors as benign 🟢 or malignant 🔴.
+The **SVM model** achieves strong performance in classifying tumors as **benign 🟢** or **malignant 🔴**.
 With more data, feature engineering, and kernel tuning, you can improve accuracy and robustness.
+
+---
+
+Made with ❤️ by Elakiya.
