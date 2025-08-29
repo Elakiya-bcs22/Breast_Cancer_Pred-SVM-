@@ -4,7 +4,8 @@ A Python-based machine learning project that uses a Support Vector Machine (SVM)
 This project demonstrates data preprocessing, model training, evaluation, and predictions using real-world medical datasets.
 
 📂 Project Structure
-Breast_Cancer_Pred-SVM/
+Breast_Cancer_Pred-SVM
+
 ├── app.py               # Run predictions using the trained model 🚀
 ├── train.py             # Train the SVM classifier 🧠
 ├── data/                # Dataset files 📊
