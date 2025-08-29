@@ -6,18 +6,12 @@ This project demonstrates data preprocessing, model training, evaluation, and pr
 📂 Project Structure
 Breast_Cancer_Pred-SVM
 
-├── app.py  
-# Run predictions using the trained model 🚀
-├── train.py
-# Train the SVM classifier 🧠
-├── data/
-# Dataset files 📊
-├── model/
-# Saved model (.pkl) 💾
-├── requirements.txt
-# Dependencies ⚙️
-└── README.md
-# Documentation 📖
+├── app.py  # Run predictions using the trained model 🚀
+├── train.py # Train the SVM classifier 🧠
+├── data/ # Dataset files 📊
+├── model/ # Saved model (.pkl) 💾
+├── requirements.txt # Dependencies ⚙️
+└── README.md # Documentation 📖
 
 ⚙️ Installation
 
